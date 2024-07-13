@@ -1,0 +1,75 @@
+import java.util.*;
+public class GradeTracker{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the marks obtained in Maths out of 100:");
+        Double a = sc.nextDouble();
+        System.out.println("Enter the marks obtained in Physics out of 100:");
+        Double b = sc.nextDouble();
+        System.out.println("Enter the marks obtained in Chemistry out of 100:");
+        Double c = sc.nextDouble();
+        Double totalMarks = (a+b+c)/3;
+        char grade;
+        if (totalMarks >= 90) {
+            grade = 'O';
+        } else if (totalMarks >= 80) {
+            grade = 'A';
+        } else if (totalMarks >= 70) {
+            grade = 'B';
+        } else if (totalMarks >= 60) {
+            grade = 'C';
+        } else if (totalMarks >= 45) {
+            grade = 'D';
+        } else {
+            grade = 'F';
+        }
+        char gradea;
+        if (a >= 90) {
+            gradea = 'O';
+        } else if (a >= 80) {
+            gradea = 'A';
+        } else if (a >= 70) {
+            gradea = 'B';
+        } else if (a >= 60) {
+            gradea = 'C';
+        } else if (a >= 45) {
+            gradea = 'D';
+        } else {
+            gradea = 'F';
+        }
+        char gradeb;
+        if (b >= 90) {
+            gradeb= 'O';
+        } else if (b >= 80) {
+            gradeb= 'A';
+        } else if (b >= 70) {
+            gradeb= 'B';
+        } else if (b >= 60) {
+            gradeb= 'C';
+        } else if (b >= 45) {
+            gradeb= 'D';
+        } else {
+            gradeb= 'F';
+        }
+        char gradec;
+        if (c >= 90) {
+            gradec= 'O';
+        } else if (c >= 80) {
+            gradec= 'A';
+        } else if (c >= 70) {
+            gradec= 'B';
+        } else if (c >= 60) {
+            gradec= 'C';
+        } else if (c >= 45) {
+            gradec= 'D';
+        } else {
+            gradec= 'F';
+        }
+        System.out.println("Grade for maths = " + gradea);
+        System.out.println("Grade for physics = " + gradeb);
+        System.out.println("Grade for chemistry = " + gradec);
+        System.out.println("Overall Grade = " + grade);
+        System.out.println("TotalMarks out of 300 = " + (a+b+c));
+       
+        }
+}
