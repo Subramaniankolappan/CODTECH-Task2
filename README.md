@@ -8,7 +8,7 @@ Domain: Java Programming
 
 Duration: June to July
 
-Mentor:
+Mentor:M.Santhosh Kumar
 
 Overview of the project 
 
